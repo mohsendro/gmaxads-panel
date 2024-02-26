@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html direction="rtl" dir="rtl" lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="direction: rtl">
+<html direction="rtl" dir="rtl" {{-- lang="{{ str_replace('_', '-', app()->getLocale()) }}" --}} lang="fa-IR" style="direction: rtl">
 @include('components.head')
 
 <!--begin::Body-->

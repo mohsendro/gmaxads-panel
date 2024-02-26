@@ -18,8 +18,9 @@
                             <h1 class="text-dark fw-bolder mb-3">ورود</h1>
                             <!--end::Title-->
                             <!--begin::Subtitle-->
-                            <div class="text-gray-500 fw-semibold fs-6">به پنل جیمکس ادز خوش آمدید! برای ورود یکی از
-                                راهای زیر را انتخاب کنید</div>
+                            <div class="text-gray-500 fw-semibold fs-6">
+                                به پنل جیمکس ادز خوش آمدید! برای ورود یکی از راهای زیر را انتخاب کنید
+                            </div>
                             <!--end::Subtitle=-->
                         </div>
                         <!--begin::Heading-->
@@ -63,7 +64,7 @@
                         <div class="fv-row mb-8">
                             <!--begin::ایمیل-->
                             <input id="email" type="email" name="email" placeholder="ایمیل" autocomplete="off"
-                                class="form-control bg-transparent @error('email') is-invalid @enderror" name="email"
+                                class="form-control bg-transparent @error('email') is-invalid @enderror"
                                 value="{{ old('email') }}" required autocomplete="email" autofocus />
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -72,6 +73,7 @@
                             @enderror
                             <!--end::ایمیل-->
                         </div>
+
                         <div class="fv-row mb-8">
                             <!--begin::password-->
                             <input id="password" type="password" name="password" placeholder="کلمه عبور"
@@ -84,6 +86,7 @@
                             @enderror
                             <!--end::password-->
                         </div>
+                        
                         <div class="fv-row mb-3">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember"
@@ -258,4 +261,8 @@
     <!--end::احراز هویت - ورود-->
 </div>
 <!--end::Root-->
+
+<!--begin::سفارشی Javascript(used for this page only)-->
+<script src="assets/js/custom/authentication/sign-in/general.js"></script>
+<!--end::سفارشی Javascript-->
 @include('components.end')
