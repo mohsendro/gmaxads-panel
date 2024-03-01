@@ -263,6 +263,6 @@
 <!--end::Root-->
 
 <!--begin::سفارشی Javascript(used for this page only)-->
-<script src="assets/js/custom/authentication/sign-in/general.js"></script>
+<script src=<?php echo asset('assets/js/custom/authentication/sign-in/general.js'); ?>></script>
 <!--end::سفارشی Javascript-->
 @include('components.end')

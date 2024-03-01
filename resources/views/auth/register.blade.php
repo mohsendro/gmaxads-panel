@@ -165,8 +165,7 @@
                             @if (Route::has('login'))
                                 <!--begin::ثبت نام-->
                                 <div class="text-gray-500 text-center fw-semibold fs-6">از قبل اکانت دارید؟
-                                    <a href="{{ route('login') }}"
-                                        class="link-primary fw-semibold">ورود</a>
+                                    <a href="{{ route('login') }}" class="link-primary fw-semibold">ورود</a>
                                 </div>
                                 <!--end::ثبت نام-->
                             @endif
@@ -301,6 +300,6 @@
 <!--end::Root-->
 
 <!--begin::سفارشی Javascript(used for this page only)-->
-<script src="assets/js/custom/authentication/sign-up/general.js"></script>
+<script src=<?php echo asset('assets/js/custom/authentication/sign-up/general.js'); ?>></script>
 <!--end::سفارشی Javascript-->
 @include('components.end')
