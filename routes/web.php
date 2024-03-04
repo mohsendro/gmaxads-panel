@@ -20,5 +20,3 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 // Route::any('/test/{id}', function ($id) {
 //     return 'Hello World' . $id;
 // });
-
-
