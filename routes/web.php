@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Authonticate
-Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-
 // Route::any('/test/{id}', function ($id) {
 //     return 'Hello World' . $id;
 // });
+// Route::get('/welcome', function() {
+//     return View('welcome');
+// })->middleware('auth', 'role:administrator|editor')->name('welcome');
+
+// Authonticate
+Auth::routes();
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');

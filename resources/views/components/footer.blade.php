@@ -4,20 +4,20 @@
     <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
         <!--begin::Copyright-->
         <div class="text-dark order-2 order-md-1">
-            <span class="text-muted fw-semibold me-1">2023&copy;</span>
-            <a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">ساتراس وب</a>
+            <span class="text-muted fw-semibold me-1">2024&copy;</span>
+            <a href="https://gmaxads.com/" target="_blank" class="text-gray-800 text-hover-primary">جیمکس ادز</a>
         </div>
         <!--end::Copyright-->
         <!--begin::Menu-->
         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
             <li class="menu-item">
-                <a href="https://keenthemes.com" target="_blank" class="menu-link px-2">درباره ی ما</a>
+                <a href="https://gmaxads.com/about-page/" target="_blank" class="menu-link px-2">درباره ی ما</a>
             </li>
             <li class="menu-item">
-                <a href="https://rtl-theme.com" target="_blank" class="menu-link px-2">پشتیبانی</a>
+                <a href="https://gmaxads.com/contact-us/" target="_blank" class="menu-link px-2">تماس با ما</a>
             </li>
             <li class="menu-item">
-                <a href="https://www.rtl-theme.com/metronic-admin-html-template/" target="_blank" class="menu-link px-2">خرید</a>
+                <a href="https://gmaxads.com/blog/" target="_blank" class="menu-link px-2">وبلاگ</a>
             </li>
         </ul>
         <!--end::Menu-->

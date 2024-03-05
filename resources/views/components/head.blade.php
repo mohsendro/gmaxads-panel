@@ -18,7 +18,7 @@
     <!-- <meta property="og:site_name" content="پنل کاربری جیمکس ادز" /> -->
 
     <link rel="canonical" href="https://panel.gmaxads.com/" />
-    <link rel="shortcut icon" href="<?php echo asset('favicon.ico'); ?>" />
+    <link rel="shortcut icon" href="<?php echo asset('assets/media/logos/logo.png'); ?>" />
     <!--begin::Fonts(mوatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->

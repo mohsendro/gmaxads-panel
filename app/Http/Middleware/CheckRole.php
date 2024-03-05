@@ -19,22 +19,24 @@ class CheckRole
      */
     public function handle(Request $request, Closure $next, $roles = []): Response
     {
-        // Get the current user
-        $user = Auth::user();
+        if( ! empty($roles) ) {
+            // Get the current user
+            $user = Auth::user(); 
 
-        // Get the user's role ID from the role_user table
-        $roleId = RoleUser::where('user_id', $user->id)->first()->role_id;
+            // Get the user's role ID from the role_user table
+            $roleId = RoleUser::where('user_id', $user->id)->first()->role_id;
 
-        // Get the user's role name from the roles table
-        $role = Role::find($roleId)->name;
+            // Get the user's role name from the roles table
+            $role = Role::find($roleId)->name;
 
-        // Check if the user has one of the required roles
-        if( ! empty($roles) ) { 
-            $roles = explode('|', $roles);
-            foreach ($roles as $role_key => $role_value) {
-                if( $role ==  $role_value) {
-                    // return redirect('/');
-                    return $next($request);
+            // Check if the user has one of the required roles
+            if( ! empty($roles) ) { 
+                $roles = explode('|', $roles);
+                foreach ($roles as $role_key => $role_value) {
+                    if( $role ==  $role_value) {
+                        // return redirect('/');
+                        return $next($request);
+                    }
                 }
             }
         }
