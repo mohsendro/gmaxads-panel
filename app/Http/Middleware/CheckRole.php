@@ -19,7 +19,7 @@ class CheckRole
      */
     public function handle(Request $request, Closure $next, $roles = []): Response
     {
-        if( ! empty($roles) ) {
+        if( ! empty($roles) && Auth::check() ) {
             // Get the current user
             $user = Auth::user(); 
 
@@ -42,6 +42,7 @@ class CheckRole
         }
 
         // // Continue to the next middleware
-        return $next($request);
+        // return $next($request);
+        return abort(404);
     }
 }

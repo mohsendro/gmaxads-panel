@@ -6,7 +6,7 @@ use App\Models\RoleUser;
 
 function CheckRole( $roles = [] )
 {
-    if( ! empty($roles) ) {
+    if( ! empty($roles) && Auth::check() ) {
         // Get the current user
         $user = Auth::user(); 
 
@@ -20,11 +20,9 @@ function CheckRole( $roles = [] )
         foreach ($roles as $role_key => $role_value) {
             if( $role ==  $role_value) {
                 return true;
-            } else {
-                return false;
             }
         }
     }
 
-    return true;
+    return false;
 }
