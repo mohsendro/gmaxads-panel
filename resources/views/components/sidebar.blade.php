@@ -35,7 +35,10 @@
             <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expو="false">
                 <?php if( CheckRole(['administrator', 'editor', 'author', 'contributor', 'subscriber' ]) ): ?>
                     @include('components.menu.subscriber')
-                    {{-- @include('components.menu.administrator') --}}
+                <?php endif; ?>
+
+                <?php if( CheckRole(['administrator']) ): ?>
+                    @include('components.menu.administrator')
                 <?php endif; ?>
             </div>
             <!--end::Menu-->

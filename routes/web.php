@@ -25,9 +25,8 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 // Users
-Route::get('user', [App\Http\Controllers\UserController::class, 'index'])->name('UserIndex');
-Route::get('list', [App\Http\Controllers\UserController::class, 'list'])->name('Userlist');
-Route::get('read', [App\Http\Controllers\UserController::class, 'read'])->name('UserRead');
-Route::get('create', [App\Http\Controllers\UserController::class, 'create'])->name('UserCreate');
-Route::get('update/{id}', [App\Http\Controllers\UserController::class, 'update'])->whereNumber('id')->name('UserUpdate');
-Route::get('delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->whereNumber('id')->name('UserDelete');
+Route::get('user', [App\Http\Controllers\UserController::class, 'index'])->name('UsersIndex');
+Route::get('user/show/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('UserShow');
+Route::get('user/create', [App\Http\Controllers\UserController::class, 'create'])->name('UserCreate');
+Route::get('user/edit/{id}', [App\Http\Controllers\UserController::class, 'edit'])->whereNumber('id')->name('UserEdit');
+Route::get('user/delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->whereNumber('id')->name('UserDelete');

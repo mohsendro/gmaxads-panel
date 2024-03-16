@@ -263,7 +263,3 @@
     <!--end:Menu link-->
 </div>
 <!--end:Menu item-->
-
-<!--begin::Menu separator-->
-<div class="separator my-2"></div>
-<!--end::Menu separator-->
