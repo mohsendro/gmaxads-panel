@@ -50,7 +50,7 @@
     <!--begin::Footer-->
     <div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
         <a href="tel:02191095659" class="btn btn-flex flex-center btn-custom btn-primary overflow-hidden text-nowrap px-0 h-40px w-100" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click" title="با ما تماس بگیرید">
-            <i class="ki-duotone ki-support-24">
+            <i class="ki-duotone ki-support-24 fs-2">
                 <span class="path1"></span>
                 <span class="path2"></span>
                 <span class="path3"></span>

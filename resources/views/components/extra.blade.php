@@ -4994,11 +4994,6 @@
         var hostUrl = "assets/";
     </script>
     
-    <!--begin::Global Javascript Bundle(mوatory for all pages)-->
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <script src="assets/js/scripts.bundle.js"></script>
-    <!--end::Global Javascript Bundle-->
-
     <!--begin::Vendors Javascript(used for this page only)-->
     <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
