@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class GooglePackagesController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -16,7 +16,7 @@ class UserController extends Controller
         $this->middleware('auth');
         $this->middleware('CheckRole:administrator');
     }
-    
+
     /**
      * Display a listing of the resource.
      */
@@ -46,7 +46,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        return view('pages.administrator.user.show');
+        //
     }
 
     /**

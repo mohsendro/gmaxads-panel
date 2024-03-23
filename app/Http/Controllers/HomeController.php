@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('role:administrator|editor|author|contributor|subscriber');
+        $this->middleware('CheckRole:administrator|editor|author|contributor|subscriber');
     }
 
     /**
