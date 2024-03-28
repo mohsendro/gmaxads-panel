@@ -16,9 +16,9 @@ return new class extends Migration
             $table->tinyInteger('currency_price')->unsgined();
             $table->tinyInteger('main_price')->unsgined();
             $table->tinyInteger('offer')->default(0)->unsgined();
-            $table->string('description', 100);
-            $table->string('bid', 100)->default(0);
-            $table->string('currency', 100);
+            $table->string('description', 255);
+            $table->string('bid', 255)->default(0);
+            $table->string('currency', 255);
             $table->timestamps();
         });
     }

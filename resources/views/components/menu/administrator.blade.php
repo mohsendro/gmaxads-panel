@@ -15,7 +15,7 @@
 <!--begin:Menu item-->
 <div class="menu-item">
     <!--begin:Menu link-->
-    <a class="menu-link" href="{{ Route('UsersIndex') }}">
+    <a class="menu-link" href="{{-- Route('UsersIndex') --}}">
         <span class="menu-icon">
             <i class="ki-duotone ki-profile-user fs-2">
                 <span class="path1"></span>
@@ -55,7 +55,7 @@
         <!--begin:Menu item-->
         <div class="menu-item">
             <!--begin:Menu link-->
-            <a class="menu-link" href="{{ Route('index') }}">
+            <a class="menu-link" href="{{ Route('GooglePackages.index') }} {{-- {{ URL::to('google-packages') }} --}}">
                 <span class="menu-bullet">
                     <span class="bullet bullet-dot"></span>
                 </span>
